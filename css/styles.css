@@ -1,12 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,900,700,500);
 
 body {
-    background:#10e88a;
-    color:#fff;
+    background: #10e88a;
+    color: #fff;
     font-family: 'Roboto', sans-serif;
-    margin:0;
-    transition:all 200ms;
-    will-change:background;
+    margin: 0;
+    transition: all 200ms;
+    will-change: background;
 }
 
 .navbar-toggler-icon {
@@ -14,13 +14,14 @@ body {
 }
 
 #intro-section {
-    padding-top: 15%;
-    min-height: 550px;
+    padding-top: 10%;
+    min-height: 500px;
 }
 
-#work-section {
-    padding-top: 15%;
-    min-height: 1750px;
+@media(max-width: 575px) {
+    #intro-section {
+        padding: 5%;
+    }
 }
 
 .bitmoji {
@@ -61,4 +62,38 @@ body {
     max-width: 300px;
 }
 
+.view-work-text {
+    margin-top: 85px;
+    font-size: 1.5rem;
+}
+
+@media(max-width: 575px) {
+    .view-work-text {
+        margin-top: 50px;
+    }
+}
+
+.bounce {
+    margin-top: -10px;
+    -moz-animation: bounce 2s infinite;
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(20px);
+    }
+    60% {
+        transform: translateY(5px);
+    }
+}
+
+a.no-hover:hover {
+    text-decoration: none;
+    color: #fff!important;
+}
 
