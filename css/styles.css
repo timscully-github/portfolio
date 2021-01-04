@@ -126,4 +126,44 @@ a.no-hover:hover {
     border-radius: 35px;
 }
 
+.overlay-emails {
+    width: 300px;
+    height: 500px;
+}
 
+.overlay-banners {
+    width: 300px;
+    height: 250px;
+}
+
+.overlay-websites {
+    width: 300px;
+    height: 500px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .25s ease;
+    background-color: #000000;
+}
+
+.image-container:hover .overlay {
+    opacity: 0.75;
+}
+
+.overlay-text {
+    color: #ffffff;
+    font-size: 1.25rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
