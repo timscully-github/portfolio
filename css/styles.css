@@ -5,6 +5,7 @@ body {
     color: #fff;
     font-family: 'Roboto', sans-serif;
     margin: 0;
+    -webkit-transition: all 200ms;
     transition: all 200ms;
     will-change: background;
 }
@@ -52,11 +53,13 @@ body {
 }
 
 .navbar-brand {
+    font-size: 20px;
     font-size: 1.25rem;
 
 }
 
 .nav-link {
+    font-size: 20px;
     font-size: 1.25rem;
 }
 
@@ -69,6 +72,7 @@ body {
 }
 
 .view-work-text {
+    font-size: 24px;
     font-size: 1.5rem;
 }
 
@@ -80,20 +84,37 @@ body {
 
 .bounce {
     margin-top: -10px;
-    -moz-animation: bounce 2s infinite;
     -webkit-animation: bounce 2s infinite;
     animation: bounce 2s infinite;
 }
 
-@keyframes bounce {
+@-webkit-keyframes bounce {
     0%, 20%, 50%, 80%, 100% {
-        transform: translateY(0);
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
     }
     40% {
-        transform: translateY(20px);
+        -webkit-transform: translateY(20px);
+                transform: translateY(20px);
     }
     60% {
-        transform: translateY(5px);
+        -webkit-transform: translateY(5px);
+                transform: translateY(5px);
+    }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+    }
+    40% {
+        -webkit-transform: translateY(20px);
+                transform: translateY(20px);
+    }
+    60% {
+        -webkit-transform: translateY(5px);
+                transform: translateY(5px);
     }
 }
 
@@ -127,12 +148,14 @@ a.no-hover:hover {
 }
 
 .img-preview {
+    -webkit-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
 }
 
 
 .img-preview:hover {
-    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
     border: 3px solid #fff;
     box-shadow: 0 0 15px #ffffff;
 }
