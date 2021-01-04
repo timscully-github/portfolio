@@ -133,5 +133,5 @@ a.no-hover:hover {
 
 .img-preview:hover {
     transform: scale(1.1);
-    border: 2px solid #fff;
+    border: 5px solid #fff;
 }
