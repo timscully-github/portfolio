@@ -2,17 +2,20 @@ $(window).on("scroll touchmove", function() {
     if ($(document).scrollTop() >= $("#intro-section").position().top) {
         $('body').css('background', $("#intro-section").attr("data-color"));
     };
+    if ($(document).scrollTop() > $("#brands-section").position().top) {
+        $('body').css('background', $("#brands-section").attr("data-color"));
+    };
     if ($(document).scrollTop() > $("#work-section").position().top) {
-        $('body').css('background', $("#work-section").attr("data-color"))
+        $('body').css('background', $("#work-section").attr("data-color"));
     };
     if ($(document).scrollTop() > $("#banners").position().top) {
-        $('body').css('background', $("#banners").attr("data-color"))
+        $('body').css('background', $("#banners").attr("data-color"));
     };
     if ($(document).scrollTop() > $("#websites").position().top) {
-        $('body').css('background', $("#websites").attr("data-color"))
+        $('body').css('background', $("#websites").attr("data-color"));
     };
     if ($(document).scrollTop() >= $("#contact-section").position().top) {
-        $('body').css('background', $("#contact-section").attr("data-color"))
+        $('body').css('background', $("#contact-section").attr("data-color"));
     };
 });
 

@@ -9,6 +9,12 @@ body {
     will-change: background;
 }
 
+#intro-section, #brands-section, #work-section, #banners, #websites {
+    padding-left: 5%;
+    padding-right: 5%;
+
+}
+
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E")!important;
 }
@@ -22,12 +28,6 @@ body {
 #intro-section {
     padding-top: 10%;
     min-height: 500px;
-}
-
-@media(max-width: 575px) {
-    #intro-section {
-        padding: 5%;
-    }
 }
 
 .bitmoji {
@@ -70,7 +70,6 @@ body {
 }
 
 .view-work-text {
-    margin-top: 85px;
     font-size: 1.5rem;
 }
 
@@ -104,9 +103,6 @@ a.no-hover:hover {
     color: #fff!important;
 }
 
-#work-section, #banners, #websites {
-    padding: 0 5% 0 5%;
-}
 
 @media(max-width: 575px) {
     .work-subhead {
@@ -116,8 +112,19 @@ a.no-hover:hover {
     }
 }
 
-#contact-section {
-    padding: 100px 5% 100px 5%;
-    min-height: 500px;
+@media(max-width: 575px) {
+    .brands-subhead {
+        text-align: center;
+        margin: 0 auto;
+    }
 }
+
+.logo-row {
+    background: rgba(255,255,255,1);
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border-radius: 35px;
+}
+
 
