@@ -9,7 +9,7 @@ body {
     will-change: background;
 }
 
-#intro-section, #brands-section, #work-section, #banners, #websites {
+#intro-section, #brands-section, #work-section, #banners, #websites, #contact-section {
     padding-left: 5%;
     padding-right: 5%;
 
