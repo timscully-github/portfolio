@@ -136,3 +136,8 @@ a.no-hover:hover {
     border: 3px solid #fff;
     box-shadow: 0 0 15px #ffffff;
 }
+
+.banner-width, .email-width {
+    width: 100%;
+    max-width: 300px;
+}
