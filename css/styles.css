@@ -152,7 +152,6 @@ a.no-hover:hover {
     transition: all .2s ease-in-out;
 }
 
-
 .img-preview:hover {
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
